@@ -1,0 +1,1382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------BARRA SUPERIOR----------------*/
+.barra-superior {
+    position: fixed;
+    display: block;
+    z-index: 10;
+    height: 15vh;
+    width: 100vw;
+    background-color: #F2F2F2;
+}
+
+.logo {
+    position: fixed;
+    top: 6vh;
+    left: 10vw;
+    width: 7em;
+}
+
+.barra-superior p {
+    color: #404040;
+    font-size: .8em;
+    text-decoration: none;
+    margin: 5px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.barra-superior a {
+    color: #0D0D0D;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.barra-superior a:hover {
+    color: #0476D9;
+    transition: ease-out .2s;
+}
+
+@media (max-width: 500px) {
+    .login-superior {
+        position: relative;
+        right: 2vw;
+    }
+}
+
+/*barra de pesquisa*/
+.barra-pesquisa {
+    position: fixed;
+    width: 25vw;
+    height: 5vh;
+    right: 50%;
+    transform: translate(50%);
+    top: 6vh;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 0px 0px 1vw;
+    background-color:#dadada;
+    text-transform: uppercase;
+    font-size: .6em;
+}
+
+/*carrinho*/
+.carrinho {
+    position: absolute;
+    width: 2.2em;
+}
+
+.finalizar-compra {
+    position: absolute;
+    top: 5vh;
+    left: .1vw;
+}
+
+.compra {
+    position: absolute;
+    top: 6vh;
+    left: 75vw;
+}
+
+.compra h6 {
+    color: #0476D9;
+    position: relative;
+    right: 10%;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+/*usuario*/
+.perfil {
+    position: absolute;
+    top: 6vh;
+    left: 87vw;
+}
+
+.perfil h6 {
+    font-weight: lighter;
+    color: #0476D9;
+    cursor: pointer;
+}
+
+.entrar {
+    position: absolute;
+    width: 1.2em;
+    left: 3.4px;
+    top: 1.5vh;
+}
+
+.entrar-cadastrar {
+    position: absolute;
+    top: 5vh;
+}
+
+/*------------NAVEGAÇÃO-------------*/
+.primeiro {
+    background-color: #0D0D0D;
+    position: fixed;
+    top: 15vh;
+    height: 7vh;
+    width: 100%;
+}
+
+/*masculino*/
+.masculino {
+    color: white;
+    border: none;
+    background-color:transparent;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    position: relative;
+    left: 15vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+.categorias-1 {
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 13vw;
+    display: none;
+    position: absolute;
+    top: 11vh;
+    left: 11vw;
+    background-color: #404040;
+    border: solid 1px #0D0D0D;
+    color: white;
+    border-radius: 6px;
+}
+
+/*feminino*/
+.feminino {
+    color: white;
+    border: none;
+    background-color:transparent;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    left: 45vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+.categorias-2 {
+    font-size: .9em;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 13vw;
+    display: none;
+    position: absolute;
+    top: 11vh;
+    left: 41vw;
+    background-color: #404040;
+    border: solid 1px #0D0D0D;
+    color: white;
+    border-radius: 6px;
+}
+
+/*favorito*/
+.favoritos {
+    color: white;
+    border: none;
+    background-color:transparent;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    left: 75vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+.categorias-3 {
+    font-size: .9em;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 13vw;
+    display: none;
+    position: absolute;
+    top: 11vh;
+    left: 71vw;
+    background-color: #404040;
+    border: solid 1px #0D0D0D;
+    color: white;
+    border-radius: 6px;
+}
+
+@media (max-width: 930px) {
+    .categorias-1, .categorias-2, .categorias-3 {
+        width: 17vw;
+        font-size: .7em;
+    }
+}
+
+/*-linha bottom*/
+.masculino::after, .feminino::after, .favoritos::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0476D9;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.masculino:hover::after, .feminino:hover::after, .favoritos:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*-tabela*/
+.opcoes td {
+    padding: 1vh 2vw 1vh 3.3vw;
+    cursor: pointer;
+}
+
+.opcoes td:hover {
+    color: #05AFF2;
+    transition: ease-out .3s;
+}
+
+/*--RESPONSIVIDADE BARRA SUPERIOR--*/
+@media (max-width: 600px) {
+    .barra-pesquisa {
+        width: 75vw;
+        position: absolute;
+        right: 55vw;
+    } 
+    .primeiro {display: none;}
+    .perfil {display: none;}
+    .carrinho {
+        position: absolute;
+        width: 2.5em;
+        left: 8vw;
+    }
+
+    .finalizar-compra { display: none;}
+
+    .login-superior {
+        font-size: .8em;
+        position: relative;
+        top: 1vh;
+    }
+
+    .logo { display: none;}
+}
+
+/*----------------CONTEUDO CENTRAL------------------*/
+/*banner black friday*/
+.anuncio-1 {
+    position: relative;
+    top: 22vh;
+    width: 96%;
+    margin: 0px 2% 0px 2%;
+    border-radius: 7px;
+}
+
+.anuncio-2 {
+    display: none;
+}
+
+.subtitulo {
+    text-align: center;
+    position: relative;
+    box-sizing: content-box;
+    font-weight:lighter;
+    text-transform: uppercase;
+    top: 25vh;
+    font-size: 1.3em;
+    color: #0D0D0D;
+}  
+
+@media (max-width: 600px) {
+    .anuncio-1 {display: none;}
+    .anuncio-2 {
+        display: block;
+        position: relative;
+        top: 15vh;
+        width: 100%;
+    }
+}
+
+/*-----------FILEIRA ANUNCIO 1-------------*/
+
+.fileira-1 {
+    background-color: #e7e7e7;
+    position: relative;
+    top: 30vh;
+    height: 70vh;
+    margin: 0 2vw 0 2vw;
+    width: 95vw;
+    border-radius: 15px;
+}
+
+/*camisa 1*/
+.fileira-1 img {
+    position: absolute;
+    width: 200px;
+    top: 10vh;
+    left: 10vw;
+    border-radius: 5px;
+}
+
+.camisa-1 img:hover {
+    border: solid 2px #8C8C8C;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+/*-descrição/preço/botão*/
+.texto-1 h3 {
+    position: absolute;
+    text-transform: uppercase;
+    left: 14vw;
+    top: 43vh;
+    width: 40vw;
+    font-size: .8em;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: #0D0D0D;
+}
+
+.texto-1 del {
+    position: absolute;
+    font-size: .7em;
+    top: 46vh;
+    left: 16vw;
+    color: #404040;
+}
+
+.texto-1 h1 {
+    position: absolute;
+    left: 14vw;
+    top: 48vh;
+    width: 40vw;
+    color: #0D0D0D;
+}
+
+.texto-1 h6 {
+    position: absolute;
+    left: 16vw;
+    top: 52.5vh;
+    font-weight: lighter;
+    color: #404040;
+}
+
+.camisa-1 button {
+    position: absolute;
+    top: 55vh;
+    left: 14vw;
+    width: 110px;
+    height: 40px;
+    border: none;
+    background-color: #0476D9;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.camisa-1 button:hover {
+    background-color: #404040;
+    transition: ease-in-out .1s;
+}
+
+/*camisa 2*/
+.camisa-2 img {
+    position: absolute;
+    width: 200px;
+    top: 10vh;
+    left: 40vw;
+    border-radius: 5px;
+}
+
+.camisa-2 img:hover {
+    border: solid 2px #8C8C8C;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+/*-descrição/preço/botão*/
+.texto-2 h3 {
+    position: absolute;
+    text-transform: uppercase;
+    left: 44vw;
+    top: 43vh;
+    width: 40vw;
+    font-size: .8em;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: #0D0D0D;
+}
+
+.texto-2 del {
+    position: absolute;
+    font-size: .7em;
+    top: 46vh;
+    left: 46vw;
+    color: #404040;
+}
+
+.texto-2 h1 {
+    position: absolute;
+    left: 44vw;
+    top: 48vh;
+    width: 40vw;
+    color: #0D0D0D;
+}
+
+.texto-2 h6 {
+    position: absolute;
+    left: 46vw;
+    top: 52.5vh;
+    font-weight: lighter;
+    color: #404040;
+}
+
+.camisa-2 button {
+    position: absolute;
+    top: 55vh;
+    left: 44vw;
+    width: 110px;
+    height: 40px;
+    border: none;
+    background-color: #0476D9;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.camisa-2 button:hover {
+    background-color: #404040;
+    transition: ease-in-out .1s;
+}
+
+/*camisa 3*/
+.camisa-3 img {
+    position: absolute;
+    top: 10vh;
+    left: 69vw;
+    border-radius: 5px;
+}
+
+.camisa-3 img:hover {
+    border: solid 2px #8C8C8C;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+/*descrição/preço/botão*/
+.texto-3 h3 {
+    position: absolute;
+    text-transform: uppercase;
+    left: 70vw;
+    top: 43vh;
+    width: 20vw;
+    font-size: .8em;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: #0D0D0D;
+}
+
+.texto-3 del {
+    position: absolute;
+    font-size: .7em;
+    top: 46vh;
+    left: 75vw;
+    color: #404040;
+}
+
+.texto-3 h1 {
+    position: absolute;
+    color: #0D0D0D;
+    left: 73vw;
+    top: 48vh;
+    width: 20vw;
+}
+
+.texto-3 h6 {
+    position: absolute;
+    left: 75vw;
+    top: 52.5vh;
+    font-weight: lighter;
+    color: #404040;
+}
+
+.camisa-3 button {
+    position: absolute;
+    top: 55vh;
+    left: 73vw;
+    width: 110px;
+    height: 40px;
+    border: none;
+    background-color: #0476D9;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.camisa-3 button:hover {
+    background-color: #404040;
+    transition: ease-in-out .1s;
+}
+
+/*----adaptável----*/
+@media (max-width: 850px) {
+    .fileira-1 {
+        width: 94vw;
+    }
+    /*camisas 1, 2, 3*/
+    .camisa-1 img {
+        position: absolute;
+        width: 200px;
+        top: 5vh;
+        left: 3vw;
+    }
+
+    .camisa-2 img {
+        position: absolute;
+        top: 5vh;
+        left: 33vw;
+    }
+
+    .camisa-3 img {
+        position: absolute;
+        top: 5vh;
+        left: 63vw;
+    }
+    /*descrição 1, 2, 3*/
+    .camisa-1 h3 {
+        position: absolute;
+        width: 30vh;
+        top: 42vh;
+        left: 10vw;
+    }
+
+    .camisa-2 h3 {
+        position: absolute;
+        width: 30vw;
+        top: 42vh;
+        left: 41vw;
+    }
+
+    .camisa-3 h3 {
+        position: absolute;
+        width: 25vw;
+        top: 42vh;
+        left: 65vw;
+    }
+    /*preço 1, 2, 3*/
+    .camisa-1 h1 {
+        position: absolute;
+        width: 20vw;
+        top: 48vh;
+        left: 9vw;
+    }
+
+    .camisa-2 h1 {
+        position: absolute;
+        width: 20vw;
+        top: 48vh;
+        left: 40vw;
+    }
+
+    .camisa-3 h1 {
+        position: absolute;
+        width: 20vw;
+        top: 48vh;
+        left: 70vw;
+    }
+    /*botão 1, 2, 3*/
+    .camisa-1 button {
+        position: absolute;
+        top: 55vh;
+        left: 9vw;
+    }
+
+    .camisa-2 button {
+        position: absolute;
+        top: 55vh;
+        left: 40vw;
+    }
+
+    .camisa-3 button {
+        position: absolute;
+        top: 55vh;
+        left: 70vw;
+    }
+    
+}
+
+/*---mobile----*/
+@media (max-width: 749px) {
+    .produtos-1 h2 {
+        position: relative;
+        top: 18vh;
+        font-size: .9em;
+    }
+    
+    .fileira-1 {
+        position: relative;
+        top: 25vh;
+        height: 1100px;
+        width: 92vw;
+        margin: 0 2vw 0 2vw;
+    }
+
+    /*camisa 1, 2, 3*/
+    .camisa-1 img {
+        position: absolute;
+        width: 11em;
+        top: 6vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .camisa-2 img {
+        position: absolute;
+        width: 11em;
+        top: 55vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .camisa-3 img {
+        position: absolute;
+        top: 105vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /*descrição 1, 2, 3*/
+    .camisa-1 h3 {
+        position: absolute;
+        top: 34vh;
+        left: 21vw;
+        width: 50vw;
+        text-align: center;
+    }
+
+    .camisa-2 h3 {
+        position: absolute;
+        top: 83vh;
+        left: 17vw;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .camisa-3 h3 {
+        position: absolute;
+        top: 137vh;
+        left: 27vw;
+        width: 40vw;
+        text-align: center;
+    }
+
+    /*preço anterior*/
+    .texto-1 del {
+        top: 36vh;
+        left: 42vw;
+        font-size: .5em;
+    }
+
+    .texto-2 del {
+        top: 85vh;
+        left: 42vw;
+        font-size: .5em;
+    }
+
+    .texto-3 del {
+        top: 141.5vh;
+        left: 42vw;
+        font-size: .5em;
+    }
+
+    /*preço 1, 2, 3*/   
+    .texto-1 h1 {
+        position: absolute;
+        font-size: 1em;
+        width: 20vw;
+        top: 37vh;
+        left: 37vw;
+    }
+    
+    .texto-2 h1 {
+        position: relative;
+        font-size: 1em;
+        width: 20vw;
+        top: 80.5vh;
+        left: 37vw;
+    }
+
+    .texto-3 h1 {
+        position: relative;
+        font-size: 1em;
+        width: 20vw;
+        top: 128vh;
+        left: 37vw;
+    }
+    /*botão*/ 
+    .camisa-1 button {
+        position: relative;
+        top: 42vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .camisa-2 button {
+        position: relative;
+        top: 82vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .camisa-3 button {
+        position: relative;
+        top: 130vh;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /*parcelas*/
+    .texto-1 h6 {
+        top: 40vh;
+        left: 40vw;
+        font-size: .6em;
+    }
+
+    .texto-2 h6 {
+        top: 89vh;
+        left: 40vw;
+        font-size: .6em;
+    }
+
+    .texto-3 h6 {
+        top: 145.5vh;
+        left: 40vw;
+        font-size: .6em;
+    }
+    
+}
+
+/*-------FILEIRA 2----------*/
+/*icones 2*/
+.icones-2 {
+    position: relative;
+    top: 38vh;
+    background-color: #e7e7e7;
+    padding: 10px;
+    height: 10vh;
+}
+.icones-2 img {
+    position: absolute;
+    display: inline;
+    left: 10vw;
+    width: 3em;
+}
+
+.icones-2 a:hover {
+    color: #0476D9;
+    border-bottom: solid 1px #0476D9;
+    transition: ease-in-out .1s;
+}
+
+/*frete*/
+#frete {
+    position: absolute;
+    left: 13vw;
+}
+
+.frete-1 {
+    font-size: 15px;
+    position: absolute;
+    left: 17vw;
+    top: 2.5vh;
+    text-decoration: none;
+    text-align: center;
+    color: #0D0D0D;
+}
+
+/*cartão*/
+#cartao {
+    position: absolute;
+    left: 32vw;
+}
+
+.cartao-1 {
+    font-size: 15px;
+    position: absolute;
+    left: 36vw;
+    top: 2.5vh;
+    text-decoration: none;
+    text-align: center;
+    color: #0D0D0D;
+}
+
+/*rápido*/
+#rapido {
+    position: absolute;
+    left: 52vw;
+}
+
+.rapido-1 {
+    font-size: 15px;
+    position: absolute;
+    left: 56vw;
+    top: 2.5vh;
+    text-decoration: none;
+    text-align: center;
+    color: #0D0D0D;
+}
+
+/*oferta*/
+#oferta {
+    position: absolute;
+    left: 73vw;
+}
+
+.oferta-1 {
+    font-size: 15px;
+    position: absolute;
+    left: 77vw;
+    top: 2.5vh;
+    text-decoration: none;
+    text-align: center;
+    color: #0D0D0D;
+}
+
+/*---adaptável*/
+@media (max-width: 1100px) {
+    /*frete*/
+    .frete-1 {
+        position: absolute;
+        left: 20vw;
+        top: 2.5vh;
+        font-size: .8em;
+    }
+    /*cartão*/
+    .cartao-1 {
+        position: absolute;
+        left: 39vw;
+        top: 2.5vh;
+        font-size: .8em;
+    }
+    /*rapido*/
+    .rapido-1 {
+        position: absolute;
+        left: 58vw;
+        top: 2.5vh;
+        font-size: .8em;
+    }
+    /*oferta*/
+    .oferta-1 {
+        position: absolute;
+        left: 79vw;
+        top: 2.5vh;
+        font-size: .8em;
+    }
+}
+
+/*---mobile---*/
+@media (max-width: 749px) {
+    .icones-2 {
+        top: 25vh;
+        height: 10vh;
+    }
+
+    /*frete*/
+    #frete {
+        width: 2em;
+        top: 2.5vh;
+        left: 4vw;
+    }
+
+    .frete-1 {
+        left: 14vw;
+        top: 3vh;
+        font-size: .6em;
+    }
+
+    /*cartão*/
+    #cartao {
+        width: 2em;
+        top: 2.5vh;
+        left: 25vw;
+    }
+
+    .cartao-1 {
+        left: 35vw;
+        top: 3vh;
+        font-size: .6em;
+    }
+
+    /*rapido*/
+    #rapido {
+        width: 2em;
+        top: 2.5vh;
+        left: 50vw;
+    }
+
+    .rapido-1 {
+        left: 60vw;
+        top: 3vh;
+        font-size: .6em;
+    }
+
+    /*oferta*/
+    #oferta {
+        width: 2em;
+        top: 2.5vh;
+    }
+
+    .oferta-1 {
+        left: 82vw;
+        top: 3vh;
+        font-size: .6em;
+    }
+}
+
+/*--------CATEGORIAS DE ROUPAS---------*/
+.categorias-secundarias h2 {
+    color: #0D0D0D;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    top: 43vh;
+    font-size: 1.2em;
+    font-weight: lighter;
+    
+}
+
+.categorias-roupas {
+    position: relative;
+    height: 40vh;
+    top: 50vh;
+}
+
+/*moletom*/
+.moletom {
+    position: absolute;
+    left: 10%;
+    transform: translate(-10%);
+    width: 9em;
+    border-radius: 50%;
+}
+
+.moletom-1 {
+    color: #404040;
+    position: absolute;
+    text-decoration: none;
+    top: 25vh;
+    left: 11.5vw;
+}
+
+/*jaquetas*/
+.jaquetas {
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%);
+    width: 9em;
+    border-radius: 50%;
+}
+
+.jaquetas-1 {
+    color: #404040;
+    position: absolute;
+    text-decoration: none;
+    top: 25vh;
+    left: 29vw;
+}
+
+/*oculos*/
+.oculos {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 9em;
+    border-radius: 50%;
+}
+
+.oculos-1 {
+    color: #404040;
+    position: absolute;
+    text-decoration: none;
+    top: 25vh;
+    left: 48vw;
+}
+
+/*bones*/
+.bones {
+    position: absolute;
+    left: 70%;
+    transform: translate(-70%);
+    width: 9em;
+    border-radius: 50%;
+}
+
+.bones-1 {
+    color: #404040;
+    position: absolute;
+    text-decoration: none;
+    top: 25vh;
+    left: 66vw;
+}
+
+/*eletronico*/
+.eletronico {
+    position: absolute;
+    left: 90%;
+    transform: translate(-90%);
+    width: 9em;
+    border-radius: 50%;
+}
+
+.eletronico-1 {
+    color: #404040;
+    position: absolute;
+    text-decoration: none;
+    top: 25vh;
+    left: 82vw;
+}
+
+/*adaptavel*/
+@media (max-width: 950px) {
+    /*moletom*/
+    .moletom {
+        position: relative;
+        width: 7em;
+        left: 11%;
+        transform: 10%;
+    }
+
+    .moletom-1 {
+        top: 20vh;
+        left: 12vw;
+    }
+    /*jaqueta*/
+    .jaquetas {
+        position: relative;
+        width: 7em;
+        left: 17%;
+        transform: 16%;
+    }
+
+    .jaquetas-1 {
+        top: 20vh;
+        left: 28.5vw;
+    }
+    /*óculos*/
+    .oculos {
+        position: relative;
+        width: 7em;
+        left: 23%;
+        transform: 24%;
+    }
+
+    .oculos-1 {
+        top: 20vh;
+        left: 47vw;
+    }
+    /*bones*/
+    .bones {
+        position: relative;
+        width: 7em;
+        left: 29%;
+        transform: 36%;
+    }
+
+    .bones-1 {
+        top: 20vh;
+        left: 64vw;
+    }
+
+    .eletronico {
+        position: relative;
+        width: 7em;
+        left: 35%;
+        transform: 36%;
+    }
+
+    .eletronico-1 {
+        top: 20vh;
+        left: 79vw;
+    }
+}
+
+@media (max-width: 749px) {
+    .categorias-roupas {
+        position: relative;
+        top: 33vh;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+    }
+    .categorias-secundarias h2 {
+        top: 28vh;
+        font-size: .9em;
+    }
+    /*moletom*/
+    .moletom {
+        position: absolute;
+        width: 5em;
+        left: 20%;
+        transform: translate(-20%);
+    }
+
+    .moletom-1 {
+        top: 13vh;
+        left: 19vw;
+        font-size: .8em;
+    }
+    /*jaquetas*/
+    .jaquetas {
+        position: absolute;
+        width: 5em;
+        left: 80%;
+        transform: translate(-80%);
+    }
+
+    .jaquetas-1 {
+        top: 13vh;
+        left: 63vw;
+        font-size: .8em;
+    }
+    /*óculos*/
+    .oculos {
+        position: absolute;
+        width: 5em;
+        top: 20vh;
+        left: 20%;
+        transform: translate(-20%);
+    }
+
+    .oculos-1 {
+        top: 33vh;
+        left: 20vw;
+        font-size: .8em;
+    }
+    /*bones*/
+    .bones {
+        position: absolute;
+        width: 5em; 
+        top: 20vh;
+        left: 80%;
+        transform: translate(-80%);
+    }
+
+    .bones-1 {
+        top: 33vh;
+        left: 65vw;
+        font-size: .8em;
+    }
+
+    /*eletronico*/
+    .eletronico, .eletronico-1 {display: none;}
+}
+
+/*----------FINAL------------*/
+.barra-final {
+    position: relative;
+    top: 50vh;
+    background-color: #e7e7e7;
+    height: 80vh;
+}
+
+/*sobre nos*/
+.sobre-nos {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+}
+
+.sobre-nos h2 {
+    color: #0D0D0D;
+    font-weight:bolder;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding-bottom: 3vh;
+}
+
+.sobre-nos a {
+    color: #595959;
+    font-weight: lighter;
+    display: block;
+    padding-bottom: 2vh;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+/*mais ajuda*/
+.mais-ajuda {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10vh;
+}
+
+.mais-ajuda h2 {
+    color: #0D0D0D;
+    font-weight:bolder;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding-bottom: 3vh;
+}
+
+.mais-ajuda a {
+    color: #595959;
+    font-weight: lighter;
+    display: block;
+    padding-bottom: 2vh;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+/*atendimento*/
+.atendimento {
+    position: absolute;
+    left: 90%;
+    transform: translate(-90%);
+    top: 10vh;
+}
+
+.atendimento h2 {
+    color: #0D0D0D;
+    font-weight:bolder;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding-bottom: 3vh;
+}
+
+.atendimento h4 {
+    color: #595959;
+    font-weight: lighter;
+    padding: 0 0 2vh 2.5vw;
+    font-size: .8em;
+}
+
+.atendimento img {
+    width: 1.3em;
+    float: left;
+}
+
+.sobre-nos a:hover, .mais-ajuda a:hover {
+    color: #0476D9;
+    transition: ease-out .1s;
+    text-decoration: underline;
+}
+
+/*pagamento*/
+.pagamento {
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pagamento h2 {
+    color: #0D0D0D;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    font-size: 1.4em;
+}
+
+.pagamento img {
+    width: 2.5em;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+/*aviso*/
+.barra-final h6 {
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/*footer final*/
+.barra-final p {
+    position: absolute;
+    top: 77vh;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: .8em;
+    color: #595959;
+}
+
+/*-adaptavel*/
+@media (max-width: 950px) {
+    .sobre-nos a, .mais-ajuda a {
+        font-size: .7em;
+    }
+
+    .atendimento h4 {
+        font-size: .7em;
+        margin-left: 1vw;
+    }
+
+    .atendimento img {
+        width: 1em;
+    }
+}
+
+/*mobile*/
+@media (max-width: 749px) {
+    .barra-final {
+        top: 35vh;
+    }
+
+    .sobre-nos a, .mais-ajuda a {
+        font-size: .5em;
+    }
+
+    .sobre-nos h2, .mais-ajuda h2, .atendimento h2, .pagamento h2 {
+        font-size: .7em;
+    }
+
+    .atendimento h4 {
+        font-size: .5em;
+        margin-left: 1vw;
+    }
+
+    .atendimento img {
+        width: .6em;
+    }
+
+    .pagamento img {
+        width: 1.1em;
+    }
+
+    .barra-final h6 {
+        font-size: .6em;
+    }
+
+    .barra-final p {
+        font-size: .5em;
+    }
+}
