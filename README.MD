@@ -2,6 +2,8 @@
 
 ## ℹ Tela front de um site fictício de E-commerce!
 
+##### Link para acessa-lo: <a href="https://tallesvini.github.io/e-commerce/">Clique aqui</a>
+
 #### Nesse projeto foi usado CSS, HTML e JS puro. 😉
 
 #### Resultado 👇🏼
