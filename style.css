@@ -641,7 +641,7 @@ html {
     .fileira-1 {
         position: relative;
         top: 24vh;
-        height: 1100px;
+        height: 1150px;
         width: 96vw;
         margin: 0 2vw 0 2vw;
     }
@@ -690,7 +690,7 @@ html {
     .camisa-3 h3 {
         position: absolute;
         top: 122vh;
-        left: 27vw;
+        left: 24vw;
         width: 50vw;
         text-align: center;
     }
@@ -698,19 +698,19 @@ html {
     /*preço anterior*/
     .texto-1 del {
         top: 33vh;
-        left: 45vw;
+        left: 44vw;
         font-size: .5em;
     }
 
     .texto-2 del {
         top: 77vh;
-        left: 45vw;
+        left: 44vw;
         font-size: .5em;
     }
 
     .texto-3 del {
         top: 125vh;
-        left: 45vw;
+        left: 44vw;
         font-size: .5em;
     }
 
@@ -720,7 +720,7 @@ html {
         font-size: 1em;
         width: 30vw;
         top: 34vh;
-        left: 42vw;
+        left: 41vw;
     }
     
     .texto-2 h1 {
@@ -728,15 +728,15 @@ html {
         font-size: 1em;
         width: 30vw;
         top: 73vh;
-        left: 42vw;
+        left: 41vw;
     }
 
     .texto-3 h1 {
         position: relative;
         font-size: 1em;
         width: 30vw;
-        top: 113vh;
-        left: 42vw;
+        top: 114vh;
+        left: 41vw;
     }
     /*botão*/ 
     .camisa-1 button {
@@ -763,19 +763,19 @@ html {
     /*parcelas*/
     .texto-1 h6 {
         top: 37vh;
-        left: 43vw;
+        left: 42vw;
         font-size: .6em;
     }
 
     .texto-2 h6 {
         top: 81.5vh;
-        left: 43vw;
+        left: 42vw;
         font-size: .6em;
     }
 
     .texto-3 h6 {
         top: 130vh;
-        left: 43vw;
+        left: 42vw;
         font-size: .6em;
     }
     
@@ -1160,7 +1160,7 @@ html {
 
     .jaquetas-1 {
         top: 13vh;
-        left: 63vw;
+        left: 71vw;
         font-size: .8em;
     }
     /*óculos*/
@@ -1188,7 +1188,7 @@ html {
 
     .bones-1 {
         top: 33vh;
-        left: 65vw;
+        left: 73vw;
         font-size: .8em;
     }
 
