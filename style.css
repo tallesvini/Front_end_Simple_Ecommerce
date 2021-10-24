@@ -262,23 +262,23 @@ html {
         position: absolute;
         right: 55vw;
     } 
+
     .primeiro {display: none;}
     .perfil {display: none;}
+    .finalizar-compra { display: none;}
+    .logo { display: none;}
     .carrinho {
         position: absolute;
-        width: 2.5em;
-        left: 8vw;
+        top: 0vh;
+        width: 3em;
+        left: 9vw;
     }
-
-    .finalizar-compra { display: none;}
-
+    
     .login-superior {
-        font-size: .8em;
+        font-size: 1em;
         position: relative;
         top: 1vh;
     }
-
-    .logo { display: none;}
 }
 
 /*----------------CONTEUDO CENTRAL------------------*/
@@ -631,18 +631,18 @@ html {
 }
 
 /*---mobile----*/
-@media (max-width: 749px) {
+@media (max-width: 600px) {
     .produtos-1 h2 {
         position: relative;
-        top: 18vh;
+        top: 20vh;
         font-size: .9em;
     }
     
     .fileira-1 {
         position: relative;
-        top: 25vh;
-        height: 1100px;
-        width: 92vw;
+        top: 24vh;
+        height: 1240px;
+        width: 96vw;
         margin: 0 2vw 0 2vw;
     }
 
@@ -658,14 +658,14 @@ html {
     .camisa-2 img {
         position: absolute;
         width: 11em;
-        top: 55vh;
+        top: 35vh;
         left: 50%;
         transform: translate(-50%);
     }
 
     .camisa-3 img {
         position: absolute;
-        top: 105vh;
+        top: 65vh;
         left: 50%;
         transform: translate(-50%);
     }
@@ -673,15 +673,15 @@ html {
     /*descrição 1, 2, 3*/
     .camisa-1 h3 {
         position: absolute;
-        top: 34vh;
-        left: 21vw;
+        top: 20vh;
+        left: 23vw;
         width: 50vw;
         text-align: center;
     }
 
     .camisa-2 h3 {
         position: absolute;
-        top: 83vh;
+        top: 49vh;
         left: 17vw;
         width: 60vw;
         text-align: center;
@@ -689,7 +689,7 @@ html {
 
     .camisa-3 h3 {
         position: absolute;
-        top: 137vh;
+        top: 81vh;
         left: 27vw;
         width: 40vw;
         text-align: center;
@@ -697,20 +697,20 @@ html {
 
     /*preço anterior*/
     .texto-1 del {
-        top: 36vh;
-        left: 42vw;
+        top: 21vh;
+        left: 45vw;
         font-size: .5em;
     }
 
     .texto-2 del {
-        top: 85vh;
-        left: 42vw;
+        top: 50vh;
+        left: 45vw;
         font-size: .5em;
     }
 
     .texto-3 del {
-        top: 141.5vh;
-        left: 42vw;
+        top: 82vh;
+        left: 45vw;
         font-size: .5em;
     }
 
@@ -719,63 +719,63 @@ html {
         position: absolute;
         font-size: 1em;
         width: 20vw;
-        top: 37vh;
-        left: 37vw;
+        top: 22vh;
+        left: 42vw;
     }
     
     .texto-2 h1 {
         position: relative;
         font-size: 1em;
         width: 20vw;
-        top: 80.5vh;
-        left: 37vw;
+        top: 48vh;
+        left: 42vw;
     }
 
     .texto-3 h1 {
         position: relative;
         font-size: 1em;
         width: 20vw;
-        top: 128vh;
-        left: 37vw;
+        top: 75.5vh;
+        left: 42vw;
     }
     /*botão*/ 
     .camisa-1 button {
         position: relative;
-        top: 42vh;
+        top: 27vh;
         left: 50%;
         transform: translate(-50%);
     }
     
     .camisa-2 button {
         position: relative;
-        top: 82vh;
+        top: 52vh;
         left: 50%;
         transform: translate(-50%);
     }
     
     .camisa-3 button {
         position: relative;
-        top: 130vh;
+        top: 79vh;
         left: 50%;
         transform: translate(-50%);
     }
 
     /*parcelas*/
     .texto-1 h6 {
-        top: 40vh;
-        left: 40vw;
+        top: 24vh;
+        left: 43vw;
         font-size: .6em;
     }
 
     .texto-2 h6 {
-        top: 89vh;
-        left: 40vw;
+        top: 53vh;
+        left: 43vw;
         font-size: .6em;
     }
 
     .texto-3 h6 {
-        top: 145.5vh;
-        left: 40vw;
+        top: 85vh;
+        left: 43vw;
         font-size: .6em;
     }
     
