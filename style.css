@@ -610,7 +610,7 @@ html {
     .fileira-1 {
         position: relative;
         top: 24vh;
-        height: 1250px;
+        height: 1350px;
         width: 96vw;
         margin: 0 2vw 0 2vw;
     }
@@ -634,7 +634,7 @@ html {
     /*_____________________*/
     .camisa-2 {
         position: absolute;
-        top: 35%;
+        top: 37%;
         left: 50%;
         transform: translate(-50%);
         width: 14em;
@@ -650,7 +650,7 @@ html {
     /*_____________________*/
     .camisa-3 {
         position: absolute;
-        top: 65%;
+        top: 68%;
         left: 50%;
         transform: translate(-50%);
         width: 14em;
