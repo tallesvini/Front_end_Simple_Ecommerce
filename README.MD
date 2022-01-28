@@ -7,7 +7,7 @@
 #### Nesse projeto foi usado CSS, HTML e JS puro. 😉
 
 #### Resultado 👇🏼
-<img src="https://user-images.githubusercontent.com/90796934/138568733-cbb95ef6-1096-4a49-8c97-d4582927e8f2.gif">
+<img src="https://user-images.githubusercontent.com/90796934/139773526-d9451c3e-df7f-4a69-ac9f-8fd174fdd38f.gif">
 
 ## ℹ Projeto feito para fins educativos e treino de aprendizagem!
 
