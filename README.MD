@@ -1,4 +1,4 @@
-# Olá! 😜 
+# `Olá!` 😜 
 
 ## ℹ Tela front de um site fictício de E-commerce!
 
@@ -7,7 +7,7 @@
 #### Nesse projeto foi usado CSS, HTML e JS puro. 😉
 
 #### Resultado 👇🏼
-<img src="https://user-images.githubusercontent.com/90796934/139773526-d9451c3e-df7f-4a69-ac9f-8fd174fdd38f.gif">
+<img src="https://user-images.githubusercontent.com/90796934/161866318-1b6403c7-aa84-4c8f-9ff7-92d3018cc88a.gif">
 
 ## ℹ Projeto feito para fins educativos e treino de aprendizagem!
 

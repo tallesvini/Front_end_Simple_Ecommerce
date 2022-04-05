@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
     <title>Loja Online</title>
@@ -16,8 +16,11 @@
 <header>
     <!--BARRA SUPERIOR-->
     <div class="barra-superior">
-        <a href="#"><img class="logo" src="imagens/logo.png" alt="logo"></a>
-            <div class="login-superior">
+        <div class="login-superior">
+            <div>
+                <p>Produtos de moda com até 70% off</p>
+            </div>
+            <div>
                 <p>
                     Seja bem vindo! Faça seu 
                     <a href="#">login</a>
@@ -25,57 +28,64 @@
                     <a href="#">cadastre-se</a>
                 </p>
             </div>
-        <!--BARRA DE PESQUISA-->
-            <input class="barra-pesquisa" type="text" name="procura" placeholder="O que voce está buscando?">
-        <!--CARRINHO-->
-            <div class="compra">
-                <a href="#"><img class="carrinho" src="imagens/icones/carrinho.png"></a>
-                <h6 class="finalizar-compra">Carrinho</h6>
+        </div>
+            
+                <div class="servicos">
+                    <!--LOGO-->
+                    <div class="home">
+                        <img class="logo" src="assets/logo.png" alt="logo">
+                    </div>
+
+                    <!--BARRA DE PESQUISA-->
+                    <div class="barra-pesquisa">
+                        <input type="text" name="procura" placeholder="O que voce está buscando?">
+                    </div>
+                
+                    <!--CARRINHO-->
+                    <div class="compra">
+                        <a href="#"><img class="carrinho" src="assets/icones/carrinho.png"></a>
+                        <h6 class="finalizar-compra">Carrinho</h6>
+                    </div>
+                </div>
             </div>
-        <!--USUARIO-->
-            <div class="perfil">
-                <a href="#"><img class="entrar" src="imagens/icones/perfil.png" alt=""></a>
-                <h6 class="entrar-cadastrar">Login</h6>
-            </div>
+        </div>
 
     <!--NAVEGAÇÃO-->
-        <nav>
-            <div class="primeiro">
-            <!--MASCULINO-->
-                <table class="categorias-1">
-                    <button e-nav class="masculino">Masculino</button>
-                    <tr class="opcoes">
-                        <td>Camisas</td>
-                    </tr>
-                    <tr class="opcoes">
-                        <td>Bermuda</td>
-                    </tr>
-                    <tr class="opcoes">
-                        <td>Toucas</td>
-                    </tr>
-                </table>
-            <!--FEMININO-->
-                <table class="categorias-2">
-                    <button e-nav class="feminino">Feminino</button>
-                    <tr class="opcoes">
-                    <td>Vestido</td>
-                    </tr>
-                    <tr class="opcoes">
-                        <td>Cropped</td>
-                    </tr>
-                    <tr class="opcoes">
-                        <td>Meias</td>
-                    </tr>
-                </table>
-            <!--FAVORITOS-->
-                <table class="categorias-3">
-                    <button e-nav class="favoritos">Favoritos</button>
-                    <tr class="opcoes">
-                        <td>Adicionar</td>
-                    </tr>
-                </table>
-            </div>
-        </nav>
+    <nav>
+        <div class="primeiro">
+        <!--MASCULINO-->
+            <table class="categorias-1">
+                <button e-nav class="masculino">Masculino</button>
+                <div class="selecoes">
+                    <div class="roupas">
+                        <p>Camisas</p>
+                        <p>Bermudas</p>
+                        <p>Toucas</p>
+                    </div>
+                </div>
+            </table>
+        <!--FEMININO-->
+            <table class="categorias-2">
+                <button e-nav class="feminino">Feminino</button>
+                <div class="selecoes">
+                    <div class="roupas">
+                        <p>Cropped</p>
+                        <p>Pijamas</p>
+                        <p>Babydol</p>
+                    </div>
+                </div>
+            </table>
+        <!--FAVORITOS-->
+            <table class="categorias-3">
+                <button e-nav class="favoritos">Favoritos</button>
+                <div class="selecoes">
+                    <div class="roupas">
+                        <p>Adicionar</p>
+                   </div>
+                </div>
+            </table>
+        </div>
+    </nav>
     </div>
 </header>
 
@@ -85,8 +95,8 @@
         <!--BANNER BLACK FRIDAY-->
         <div class="produtos-1">
             <div>
-                <a href="#"><img class="anuncio-1" src="imagens/anuncio-1.png"></a>
-                <a href="#"><img class="anuncio-2" src="imagens/anuncio-2.png"></a>
+                <a href="#"><img class="anuncio-1" src="assets/anuncio-1.png"></a>
+                <a href="#"><img class="anuncio-2" src="assets/anuncio-2.png"></a>
             </div>
             <h2 class="subtitulo">Produtos em destaque</h2>
         </div>
@@ -95,33 +105,33 @@
         <!--CAMISA 1-->
         <section class="fileira-1">
             <div class="camisa-1">
-                <img src="imagens/roupas/imagem-1.jpg">
+                <img src="assets/roupas/imagem-1.jpg">
                 <div class="texto-1">
-                    <h3>Camiseta</h3>
+                    <p>Camiseta</p>
                     <del>R$ 159,90</del>
-                    <h1>R$ 129,90</h1>
+                    <h3>R$ 129,90</h3>
                     <h6>5x R$ 27,90</h6>
                     <button>Comprar</button>
                 </div>
             </div>
         <!--CAMISA 2-->
             <div class="camisa-2">
-                <img src="imagens/roupas/imagem-2.jpg">
+                <img src="assets/roupas/imagem-2.jpg">
                 <div class="texto-2">
-                    <h3>Camiseta</h3>
+                    <p>Camiseta</p>
                     <del>R$ 199,90</del>
-                    <h1>R$ 169,90</h1>
+                    <h3>R$ 169,90</h3>
                     <h6>5x R$ 35,90 </h6>
                     <button>Comprar</button>
                 </div>
             </div>
         <!--CAMISA 3-->
             <div class="camisa-3">
-                <img src="imagens/roupas/imagem-3.jpg">
+                <img src="assets/roupas/imagem-3.jpg">
                 <div class="texto-3">
-                    <h3>Vestido</h3>
+                    <p>Vestido</p>
                     <del>R$ 149,90</del>
-                    <h1>R$ 119,90</h1>
+                    <h3>R$ 119,90</h3>
                     <h6>5x R$ 24,90</h6>
                 </div>
                 <button>Comprar</button>
@@ -132,16 +142,16 @@
     <section class="fileira-2">
         <div class="icones-2">
 
-            <img id="frete" src="imagens/icones/frete.png">
+            <img id="frete" src="assets/icones/frete.png">
             <a href="#" class="frete-1">Frete <br>Gratis</a>
             
-            <img id="cartao" src="imagens/icones/parcelas.png">
+            <img id="cartao" src="assets/icones/parcelas.png">
             <a href="#" class="cartao-1">Até 10x <br> sem juros</a>
             
-            <img id="rapido" src="imagens/icones/entrega.png">
+            <img id="rapido" src="assets/icones/entrega.png">
             <a href="#" class="rapido-1">Entrega <br> rápida</a>
             
-            <img id="oferta" src="imagens/icones/preços.png">
+            <img id="oferta" src="assets/icones/preços.png">
             <a href="#" class="oferta-1">Melhores <br> ofertas</a>
 
         </div>
@@ -151,30 +161,39 @@
     <section class="categorias-secundarias">
         <h2>Você encontra também</h2>
         <div class="categorias-roupas">
-            
-            <a href="#"><img class="moletom" src="imagens/roupas/moletom.jpg"></a>
-            <div class="moletom-box">
-                <a href="#" class="moletom-1">Moletons</a>
+            <div>
+                <a href="#"><img class="moletom" src="assets/roupas/moletom.jpg"></a>
+                <div class="moletom-box">
+                    <a href="#" class="moletom-1">Moletons</a>
+                </div>
             </div>
 
-            <a href="#"><img class="jaquetas" src="imagens/roupas/jaqueta.jpg"></a>
-            <div class="jaquetas-box">
-                <a href="#" class="jaquetas-1">Jaquetas</a>
+            <div>
+                <a href="#"><img class="jaquetas" src="assets/roupas/jaqueta.jpg"></a>
+                <div class="jaquetas-box">
+                    <a href="#" class="jaquetas-1">Jaquetas</a>
+                </div>
             </div>
 
-            <a href="#"><img class="oculos" src="imagens/roupas/oculos.jpg"></a>
-            <div class="oculos-box">
-                <a href="#" class="oculos-1">Óculos</a>
+            <div>
+                <a href="#"><img class="oculos" src="assets/roupas/oculos.jpg"></a>
+                <div class="oculos-box">
+                    <a href="#" class="oculos-1">Óculos</a>
+                </div>
             </div>
 
-            <a href="#"><img class="bones" src="imagens/roupas/bone.jpg"></a>
-            <div class="bones-box">
-                <a href="#" class="bones-1">Bones</a>
+            <div>
+                <a href="#"><img class="bones" src="assets/roupas/bone.jpg"></a>
+                <div class="bones-box">
+                    <a href="#" class="bones-1">Bones</a>
+                </div>
             </div>
 
-            <a href="#"><img class="eletronico" src="imagens/roupas/eletronico.png"></a>
-            <div class="eletronico-box"> 
-                <a href="#" class="eletronico-1">Eletronicos</a>
+            <div>
+                <a href="#"><img class="eletronico" src="assets/roupas/eletronico.png"></a>
+                <div class="eletronico-box"> 
+                    <a href="#" class="eletronico-1">Eletronicos</a>
+                </div>
             </div>
 
         </div>
@@ -186,54 +205,59 @@
 <footer>
     <div class="barra-final">
         <!--MAIS AJUDA-->
-        <div class="sobre-nos">
-            <h2>Sobre nós</h2>
-            
-            <a href="#">Quem Somos</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Trabalhe Conosco</a>
-            <a href="#">Anuncie Conosco</a>
-            <a href="#">Seja Parceiro</a>
-            <a href="#">Segurança</a>
-        </div>
-        <div class="mais-ajuda">
-            <h2>Mais ajudas</h2>
-            
-            <a href="#">Dúvidas Frequentes</a>
-            <a href="#">Como Comprar</a>
-            <a href="#">Tempo de Garantia</a>
-            <a href="#">Central de Relacionamento</a>
-            <a href="#">Formas de entregas</a>
+        <div class="informacao">
+            <div class="sobre-nos">
+                <h2>Sobre nós</h2>
+                
+                <a href="#">Quem Somos</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Trabalhe Conosco</a>
+                <a href="#">Anuncie Conosco</a>
+                <a href="#">Seja Parceiro</a>
+                <a href="#">Segurança</a>
+            </div>
+            <div class="mais-ajuda">
+                <h2>Mais ajudas</h2>
+                
+                <a href="#">Dúvidas Frequentes</a>
+                <a href="#">Como Comprar</a>
+                <a href="#">Tempo de Garantia</a>
+                <a href="#">Central de Relacionamento</a>
+                <a href="#">Formas de entregas</a>
+            </div>
+            <div class="atendimento">
+                <h2>Atendimento</h2>
+                
+                <img class="telefone" src="assets/icones/telefone.png">
+                <h4>(00) 00000-0000</h4>
+    
+                <img class="email" src="assets/icones/email.png">
+                <h4>xxxxxx@gmail.com</h4>
+    
+                <img src="assets/icones/alerta.png">
+                <h4>Atendimento de segunda a sexta <br> das 9:00 as 17:00 (exceto feriados)</h4>
+            </div>
         </div>
 
-        <div class="atendimento">
-            <h2>Atendimento</h2>
-            
-            <img class="telefone" src="imagens/icones/telefone.png">
-            <h4>(00) 00000-0000</h4>
-
-            <img class="email" src="imagens/icones/email.png">
-            <h4>xxxxxx@gmail.com</h4>
-
-            <img src="imagens/icones/alerta.png">
-            <h4>Atendimento de segunda a sexta <br> das 9:00 as 17:00 (exceto feriados)</h4>
+        <div class="informacao-2">
+            <div class="pagamento">
+                <h2>Formas de pagamentos</h2>
+                
+                <a href="#"><img src="assets/cartão/boleto.png"></a>
+                <a href="#"><img src="assets/cartão/bradesco.jpg"></a>
+                <a href="#"><img src="assets/cartão/caixa.jpg"></a>
+                <a href="#"><img src="assets/cartão/elo_logo-baixa.png"></a>
+                <a href="#"><img src="assets/cartão/itau.png"></a>
+                <a href="#"><img src="assets/cartão/master.png"></a>
+                <a href="#"><img src="assets/cartão/visa.png"></a>
+            </div>
+            <!--AVISO-->
+            <h6>Site fictício para fins educativos!</h6>
+            <!--FOOTER FINAL-->
+            <p>Copyright © 2022 Todos os direitos reservados.</p>  
         </div>
-        <div class="pagamento">
-            <h2>Formas de pagamentos</h2>
-            
-            <a href="#"><img src="imagens/cartão/boleto.png"></a>
-            <a href="#"><img src="imagens/cartão/bradesco.jpg"></a>
-            <a href="#"><img src="imagens/cartão/caixa.jpg"></a>
-            <a href="#"><img src="imagens/cartão/elo_logo-baixa.png"></a>
-            <a href="#"><img src="imagens/cartão/itau.png"></a>
-            <a href="#"><img src="imagens/cartão/master.png"></a>
-            <a href="#"><img src="imagens/cartão/visa.png"></a>
-        </div>
-        <!--AVISO-->
-        <h6>Site fictício para fins educativos!</h6>
-        <!--FOOTER FINAL-->
-        <p>Copyright © 2022 Todos os direitos reservados.</p>  
+
     </div>
 </footer>
 </body>
